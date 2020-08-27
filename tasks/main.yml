@@ -3,3 +3,17 @@
   package:
     name: git
     state: present
+
+- name: clone repos
+  git:
+    repo: "{{ item.repo }}"
+    dest: "{{ item.path }}"
+    accept_hostkey: yes
+    version: "{{ item.version | default('HEAD') }}"
+    force: "{{ item.force | default(git_force) }}"
+  loop: "{{ git_repositories }}"
+  become: yes
+  when:
+    - git_repositories is defined
+  loop_control:
+    label: "{{ item.path }}"

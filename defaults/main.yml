@@ -1,2 +1,11 @@
 ---
-# defaults file for git
+# The repositories to check out, bootstrap is pinned to a version, java will get HEAD/latest.
+# git_repositories:
+#   - repo: https://github.com/jordiprats/puppet-masterless
+#     path: /opt/masterless_version
+#     version: 0.1.0
+#   - repo: https://github.com/jordiprats/puppet-masterless
+#     path: /opt/masterless_head
+#   - repo: https://github.com/jordiprats/puppet-masterless
+#     path: /opt/masterless_force
+#     force: yes
