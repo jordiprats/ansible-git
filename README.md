@@ -1,7 +1,6 @@
 # Role Name
 
-A brief description of the role goes here.
-
+Install git and clone repositories to the system
 
 ## Role Variables
 
