@@ -1,5 +1,4 @@
 ---
-# The repositories to check out, bootstrap is pinned to a version, java will get HEAD/latest.
 # git_repositories:
 #   - repo: https://github.com/jordiprats/puppet-masterless
 #     path: /opt/masterless_version
