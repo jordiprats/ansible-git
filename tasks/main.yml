@@ -10,7 +10,6 @@
     dest: "{{ item.path }}"
     accept_hostkey: yes
     version: "{{ item.version | default('HEAD') }}"
-    force: "{{ item.force | default(git_force) }}"
   loop: "{{ git_repositories }}"
   become: yes
   when:

@@ -6,6 +6,3 @@
 #     version: 0.1.0
 #   - repo: https://github.com/jordiprats/puppet-masterless
 #     path: /opt/masterless_head
-#   - repo: https://github.com/jordiprats/puppet-masterless
-#     path: /opt/masterless_force
-#     force: yes
